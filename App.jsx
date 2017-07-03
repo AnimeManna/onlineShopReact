@@ -1,6 +1,24 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const title = React.createElement('h1',null, 'ReactTodo');
+class App extends React.Component {
+   render() {
+      return (
 
-ReactDom.render(title, document.getElementById('root'));
+
+            <div className="main-page">
+              <div className="headline">
+                <div className="headline__logo"> KeyBordShop </div>
+                <div className="headline__block"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</div>
+                <div className="headline__block"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</div>
+
+              </div>
+
+            </div>
+
+
+      );
+   }
+}
+
+export default App;
