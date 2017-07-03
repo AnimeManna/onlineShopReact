@@ -1,2 +1,0 @@
-# onlineShopReact
-onlineShopReact
