@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server -p --config ./webpack.config.js",
-    "lint" : "eslint ."
+    "lint" : "eslint .",
+    "build": "webpack --config ./webpack.config.js"
   },
   "keywords": [
     "killermax2000"

@@ -30,4 +30,5 @@ body{
 .headline__block:hover{
   border-bottom: 5px solid white;
   color:white;
+  cursor:pointer;
 }

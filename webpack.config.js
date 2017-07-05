@@ -1,8 +1,14 @@
 var config = {
    entry: './index.js',
 
+   node: {
+     __dirname: true
+   },
+
    output: {
-      path:'/',
+
+      path:__dirname + '/public/',
+      publicPath:'/public/',
       filename: 'bundle.js',
    },
 
