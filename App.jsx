@@ -9,9 +9,8 @@ class App extends React.Component {
             <div className="main-page">
               <div className="headline">
                 <div className="headline__logo"> KeyBordShop </div>
-                <div className="headline__block"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</div>
-                <div className="headline__block"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</div>
-
+                <div className="headline__block"><i className="fa fa-sign-in headline__icon" aria-hidden="true"></i>Sign in</div>
+                <div className="headline__block"><i className="fa fa-user-plus headline__icon" aria-hidden="true"></i>Sign up</div>
               </div>
 
             </div>

@@ -20,6 +20,12 @@ body{
 }
 .headline__block{
   font-size:20px;
-  width:100px;
+  width:150px;
   color:rgba(255,255,255, .8)
+}
+.headline__icon{
+  margin-right:20px;
+}
+.headline__block:hover{
+  border-bottom: 5px solid white;
 }
