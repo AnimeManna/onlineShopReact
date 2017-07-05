@@ -21,11 +21,13 @@ body{
 .headline__block{
   font-size:20px;
   width:150px;
-  color:rgba(255,255,255, .8)
+  color:rgba(255,255,255, .8);
+  transition: border .1s ease-in-out;
 }
 .headline__icon{
   margin-right:20px;
 }
 .headline__block:hover{
   border-bottom: 5px solid white;
+  color:white;
 }
