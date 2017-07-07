@@ -7,15 +7,36 @@ export default class Sidebar extends React.Component {
         className="app__sidebar">
         <div
           className="app__sidebar__item">
-          Механические клавиатуры
+          <i
+            className="fa fa-home"
+            aria-hidden="true"
+            id="app__sidebar__icon"/>
+          <div
+            className="app__sidebar__itemText">
+            Главная страница
+          </div>
         </div>
         <div
           className="app__sidebar__item">
-          Мембраные клавиатуры
+          <i
+            className="fa fa-sitemap"
+            aria-hidden="true"
+            id="app__sidebar__icon"/>
+          <div
+            className="app__sidebar__itemText">
+            Каталог
+          </div>
         </div>
         <div
           className="app__sidebar__item">
-          Беспроводные клавиатуры
+          <i
+            className="fa fa-shopping-cart"
+            aria-hidden="true"
+            id="app__sidebar__icon"/>
+          <div
+            className="app__sidebar__itemText">
+            Корзина
+          </div>
         </div>
       </div>
     )
