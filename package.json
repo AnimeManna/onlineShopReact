@@ -22,18 +22,10 @@
     "webpack-dev-server": "^2.5.0",
     "webpack-hot-middleware": "^2.18.0"
   },
-  "devDependencies": {
-    "eslint": "^4.1.1",
-    "eslint-plugin-react": "^7.1.0"
-  },
   "scripts": {
     "start": "webpack-dev-server -p --config ./webpack.config.js",
-    "lint": "eslint .",
     "build": "webpack --config ./webpack.config.js"
   },
-  "keywords": [
-    "killermax2000"
-  ],
-  "author": "AnimeManna",
+  "author": "AnimeManna, Reymor",
   "license": "ISC"
 }
