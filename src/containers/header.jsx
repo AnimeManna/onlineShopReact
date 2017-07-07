@@ -14,7 +14,7 @@ class Header extends React.Component {
         className="app__header">
         <div>
           <i
-            className="fa fa-list"
+            className="fa fa-bars"
             id="app_header__sidebarIcon"
             aria-hidden="true"
             onClick={() => this.toggleSidebar()}/>
