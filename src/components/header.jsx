@@ -21,7 +21,9 @@ export default class HeaderComponent extends React.Component {
             className="fa fa-sign-in"
             id="app__header__icon"
             aria-hidden="true"/>
-          Войти
+          <div>
+            Войти
+          </div>
         </div>
         <div
           className="app__header__item">
@@ -29,7 +31,9 @@ export default class HeaderComponent extends React.Component {
             className="fa fa-user-plus"
             id="app__header__icon"
             aria-hidden="true"/>
-          Зарегистрироваться
+          <div>
+            Зарегистрироваться
+          </div>
         </div>
       </div>
     )
