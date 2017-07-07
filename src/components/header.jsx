@@ -1,6 +1,13 @@
 import React from 'react'
+import {
+  connect
+} from 'react-redux'
 
-export default class HeaderComponent extends React.Component {
+class Header extends React.Component {
+  toggleMenu() {
+    this.props.toggleMenu()
+  }
+
   render() {
     return (
       <div
@@ -9,7 +16,8 @@ export default class HeaderComponent extends React.Component {
           <i
             className="fa fa-list"
             id="app_header__sidebarIcon"
-            aria-hidden="true"/>
+            aria-hidden="true"
+            onClick={() => this.toggleMenu()}/>
         </div>
         <div
           className="app__header__logo">
@@ -39,3 +47,14 @@ export default class HeaderComponent extends React.Component {
     )
   }
 }
+
+export default connect(
+  store => ({
+    state: store
+  }),
+  dispatch => ({
+    toggleMenu: () => dispatch({
+      type: 'TOGGLE_SIDEBAR',
+    })
+  })
+)(Header)

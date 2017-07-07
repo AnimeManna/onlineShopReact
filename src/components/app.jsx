@@ -2,6 +2,9 @@ import React from 'react'
 import Header from './header.jsx'
 import Content from './content.jsx'
 import Sidebar from './sidebar.jsx'
+import {
+  connect
+} from 'react-redux'
 
 
 class App extends React.Component {
@@ -10,7 +13,9 @@ class App extends React.Component {
       <div className="app">
         <Header/>
         <div className="app__body">
-          <Sidebar className="app__sidebar"/>
+          {this.props.state.menuIsActive
+            ? <Sidebar className="app__sidebar"/>
+            : null}
           <Content className="app__content"/>
         </div>
       </div>
@@ -18,4 +23,9 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default connect(
+  store => ({
+    state: store
+  }),
+  null
+)(App)
