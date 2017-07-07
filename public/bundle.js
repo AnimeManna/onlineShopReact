@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9f56d98d530e6281307f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "61f72d33ed23730e9f22"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -34130,7 +34130,7 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'app__body' },
-          this.props.state.menuIsActive ? _react2.default.createElement(_sidebar2.default, { className: 'app__sidebar' }) : null,
+          this.props.state.sidebarIsActive ? _react2.default.createElement(_sidebar2.default, { className: 'app__sidebar' }) : null,
           _react2.default.createElement(_content2.default, { className: 'app__content' })
         )
       );
@@ -34183,9 +34183,9 @@ var Header = function (_React$Component) {
   }
 
   _createClass(Header, [{
-    key: 'toggleMenu',
-    value: function toggleMenu() {
-      this.props.toggleMenu();
+    key: 'toggleSidebar',
+    value: function toggleSidebar() {
+      this.props.toggleSidebar();
     }
   }, {
     key: 'render',
@@ -34204,7 +34204,7 @@ var Header = function (_React$Component) {
             id: 'app_header__sidebarIcon',
             'aria-hidden': 'true',
             onClick: function onClick() {
-              return _this2.toggleMenu();
+              return _this2.toggleSidebar();
             } })
         ),
         _react2.default.createElement(
@@ -34254,7 +34254,7 @@ exports.default = (0, _reactRedux.connect)(function (store) {
   };
 }, function (dispatch) {
   return {
-    toggleMenu: function toggleMenu() {
+    toggleSidebar: function toggleSidebar() {
       return dispatch({
         type: 'TOGGLE_SIDEBAR'
       });
@@ -37868,7 +37868,7 @@ Object.defineProperty(exports, "__esModule", {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var initialState = {
-  menuIsActive: true
+  sidebarIsActive: true
 };
 
 exports.default = function () {
@@ -37877,7 +37877,7 @@ exports.default = function () {
 
   if (action.type === 'TOGGLE_SIDEBAR') {
     var newState = {
-      menuIsActive: !state.menuIsActive
+      sidebarIsActive: !state.sidebarIsActive
     };
     return _extends({}, state, newState);
   }

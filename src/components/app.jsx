@@ -13,7 +13,7 @@ class App extends React.Component {
       <div className="app">
         <Header/>
         <div className="app__body">
-          {this.props.state.menuIsActive
+          {this.props.state.sidebarIsActive
             ? <Sidebar className="app__sidebar"/>
             : null}
           <Content className="app__content"/>

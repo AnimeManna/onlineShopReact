@@ -1,11 +1,11 @@
 const initialState = {
-  menuIsActive: true,
+  sidebarIsActive: true,
 }
 
 export default (state = initialState, action) => {
   if (action.type === 'TOGGLE_SIDEBAR') {
     const newState = {
-      menuIsActive: !state.menuIsActive
+      sidebarIsActive: !state.sidebarIsActive
     }
     return {
       ...state,

@@ -4,8 +4,8 @@ import {
 } from 'react-redux'
 
 class Header extends React.Component {
-  toggleMenu() {
-    this.props.toggleMenu()
+  toggleSidebar() {
+    this.props.toggleSidebar()
   }
 
   render() {
@@ -17,7 +17,7 @@ class Header extends React.Component {
             className="fa fa-list"
             id="app_header__sidebarIcon"
             aria-hidden="true"
-            onClick={() => this.toggleMenu()}/>
+            onClick={() => this.toggleSidebar()}/>
         </div>
         <div
           className="app__header__logo">
@@ -53,7 +53,7 @@ export default connect(
     state: store
   }),
   dispatch => ({
-    toggleMenu: () => dispatch({
+    toggleSidebar: () => dispatch({
       type: 'TOGGLE_SIDEBAR',
     })
   })
