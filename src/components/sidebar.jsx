@@ -1,11 +1,15 @@
 import React from 'react'
+import {
+  Link
+} from 'react-router-dom'
 
 export default class Sidebar extends React.Component {
   render() {
     return (
       <div
         className="app__sidebar">
-        <div
+        <Link
+          to="/"
           className="app__sidebar__item">
           <i
             className="fa fa-home"
@@ -15,8 +19,9 @@ export default class Sidebar extends React.Component {
             className="app__sidebar__itemText">
             Главная страница
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/catalog"
           className="app__sidebar__item">
           <i
             className="fa fa-sitemap"
@@ -26,7 +31,7 @@ export default class Sidebar extends React.Component {
             className="app__sidebar__itemText">
             Каталог
           </div>
-        </div>
+        </Link>
         <div
           className="app__sidebar__item">
           <i
